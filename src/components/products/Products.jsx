@@ -15,7 +15,7 @@ import useStyles from './styles';
 //     {id: 8, name: 'Hat', description: 'Print and wool material', price: '$115', image: 'https://images.ctfassets.net/5de70he6op10/57f2weW4kUAfG6E7tfvHNq/5b5e609f7be1c4b16fc0b843a003616e/2_hats.jpg?q=80&fm=webp'}
 // ];
 
-const Products = ({products}) => {
+const Products = ({products, handleAddToCart}) => {
     const classes = useStyles();
 
  return (
@@ -25,7 +25,7 @@ const Products = ({products}) => {
     <Grid container justify= "center" spacing={4}>
          { products.map((product) => (
             <Grid item key={product.id} xs={12}  sm={6}  md={4}  lg={3}>
-                <Product product={product}/>   
+                <Product product={product} handleAddToCart={handleAddToCart}/>   
             </Grid>
 
           ))}
