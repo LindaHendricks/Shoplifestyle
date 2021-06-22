@@ -1,1 +1,1 @@
-e-shop practice with a focus on the front-end by using commerce.js
+e-shop practice with a focus on the front-end this why i am using commerce.js here
