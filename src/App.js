@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import { commerce } from "./lib/commerce";
-import { useState, useEffect } from "react";
+import {Products, Navbar, Cart } from "./components";
 
 // import Products from './components/Products/Products';
 // import Navbar from './components/Navbar/Navbar';
-
-import { Products, Navbar } from "./components";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -37,8 +35,9 @@ const App = () => {
 
   return (
     <div>
-      <Navbar />
-      <Products products={products} handleAddToCart={handleAddToCart} />
+      <Navbar totalItems={cart.total_items}/>
+      {/* <Products products={products} handleAddToCart={handleAddToCart} /> */}
+      <Cart cart={cart}/>
     </div>
   );
 };
