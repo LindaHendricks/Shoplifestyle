@@ -30,13 +30,13 @@ const App = () => {
   }, []);
 
 //   console.log(products);
-      console.log(cart);
+     // console.log(cart);
 
 
   return (
     <div>
       <Navbar totalItems={cart.total_items}/>
-      {/* <Products products={products} handleAddToCart={handleAddToCart} /> */}
+      {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
       <Cart cart={cart}/>
     </div>
   );

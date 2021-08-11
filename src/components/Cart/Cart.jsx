@@ -1,12 +1,15 @@
 import React from 'react';
 import { Container, Typography, Button, Grid } from '@material-ui/core';
-
 import useStyles from './styles'
+
+
 const Cart = ({cart}) => {
       const classes=useStyles();
+
+    
       
       const EmptyCart = () => (
-                <Typography variant= "subtitle1"> Empty Cart</Typography>
+                <Typography variant= "subtitle1">Empty Cart</Typography>
       );
 
 
